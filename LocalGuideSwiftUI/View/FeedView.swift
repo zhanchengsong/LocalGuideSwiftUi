@@ -12,7 +12,11 @@ struct FeedView: View {
         ZStack (alignment: .bottomTrailing ) {
             
             ScrollView {
-                
+                VStack {
+                    ForEach(0..<9) {
+                        _ in ContentCard()
+                    }
+                }
             }
             
             Button(action: {}, label: {

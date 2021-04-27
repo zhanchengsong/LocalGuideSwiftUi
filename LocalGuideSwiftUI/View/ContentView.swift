@@ -27,6 +27,11 @@ struct ContentView: View {
                         Image (systemName: "envelope")
                         Text("Messages")
                     }
+                ImageTestView()
+                    .tabItem {
+                        Image (systemName: "doc")
+                        Text("test")
+                    }
             }
         }.navigationBarTitle("Home")
         .navigationBarTitleDisplayMode(.inline)

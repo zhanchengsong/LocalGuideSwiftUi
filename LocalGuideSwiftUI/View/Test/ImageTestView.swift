@@ -68,7 +68,7 @@ struct ImageTestView: View {
     
     func uploadImage() {
         let mediaService = MediaService.shared
-        mediaService.upLoadImage(imageData: inputImage!.pngData()!)
+        mediaService.upLoadImage(imageData: inputImage!.jpegData(compressionQuality: 0.2)!)
     }
 }
 

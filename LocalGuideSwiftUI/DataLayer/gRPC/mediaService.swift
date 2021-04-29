@@ -9,20 +9,33 @@ import Foundation
 import GRPC
 import NIO
 
+
 class MediaService {
     // Singleton instance
     static let shared = MediaService()
     
     private init() {}
-    private let client = createGRPCClient()
+    private let client = setupTLSClient()!
     
     private static func createGRPCClient() -> MediaProto_imageClient {
-        let port = 5005
+        let port = 443
         let group = MultiThreadedEventLoopGroup(numberOfThreads: 1)
         
         let channel = ClientConnection.insecure(group: group)
-          .connect(host: "localhost", port: port)
+          .connect(host: "media.zhancheng.dev", port: port)
         let client = MediaProto_imageClient(channel: channel)
+        return client
+    }
+    
+    private static func setupTLSClient() -> MediaProto_imageClient? {
+        let hostName="media.zhancheng.dev"
+        let port = 443
+        let group = MultiThreadedEventLoopGroup(numberOfThreads: 1)
+        let builder: ClientConnection.Builder
+        builder = ClientConnection.secure(group: group)
+        let connection = builder.connect(host: hostName, port: port)
+        print("Connection Status=>:\(connection.connectivity.state)")
+        let client = MediaProto_imageClient(channel:connection)
         return client
     }
     

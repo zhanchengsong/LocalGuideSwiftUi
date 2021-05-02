@@ -17,7 +17,7 @@ struct LoginView: View {
                 Image("LGIcon")
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 220, height: 100)
+                    .frame(width: 110, height: 50)
                     .padding(.top, 88)
                     .padding(.bottom, 100)
                 VStack(spacing: 16) {
@@ -45,7 +45,7 @@ struct LoginView: View {
                 }
                 
                 Button(action: {}, label: {
-                    Text("Sign in")
+                    Text("Login in")
                         .font(.headline)
                         .foregroundColor(Color("primaryPinkText"))
                         .frame(width: 320, height: 50)

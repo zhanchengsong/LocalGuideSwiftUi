@@ -21,7 +21,6 @@ class UserService {
     func registerUser(registerUser: UserRegistrationRequest, completion: @escaping (Result<UserModel, Error>) -> Void) {
         do {
             let jsonBody = try JSONEncoder().encode(registerUser)
-            print(jsonBody)
             let url = UserAPI.registerUserUrl
             var request = URLRequest(url: url)
             request.httpMethod = "POST"

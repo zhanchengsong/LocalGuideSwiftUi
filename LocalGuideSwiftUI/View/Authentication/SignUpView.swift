@@ -51,20 +51,13 @@ struct SignUpView: View {
                 
                 
                 Button(action: {
-                    let userService = UserService.shared
+                    let userManager = UserManager.shared
                     let registerUserBody = UserRegistrationRequest(username: self.username, displayName: self.displayName, email: self.email, password: self.password)
-                    userService.registerUser(registerUser: registerUserBody, completion:{
-                        result in
-                        switch result {
-                        case .success(let user): do {
-                            print(user)
-                        }
-                        case .failure(let error): do {
-                            print(error)
-                        }
-                            
-                        }
-                    } )
+                    let createUserResult = userManager.registerUserAndSaveToken(userReq: registerUserBody)
+                    if (createUserResult != "") {
+                        let keyChainJWT = UserKeyChainManager.getJWTToken(userId: createUserResult)
+                        print("Fetched jwt from KeyChain: " + keyChainJWT)
+                    }
                 }, label: {
                     Text("Sign up")
                         .font(.headline)

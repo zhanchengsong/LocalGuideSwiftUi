@@ -87,49 +87,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4559EA37-BF68-4133-A033-3D3492887EDF"
-            shouldBeEnabled = "No"
+            uuid = "3171969E-DC23-4FD2-9D10-B69ECF681A1D"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LocalGuideSwiftUI/DataLayer/transferObjects/UserModel.swift"
+            filePath = "LocalGuideSwiftUI/View/Authentication/SignUpView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "UserModel"
-            landmarkType = "14">
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9257F4F9-0D33-4CA9-8C87-B4B66740C076"
+            uuid = "579B6718-AEC3-4132-9D44-DFC09C685946"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LocalGuideSwiftUI/DataLayer/restService/User/UserService.swift"
+            filePath = "LocalGuideSwiftUI/View/Authentication/SignUpView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "registerUser(registerUser:completion:)"
-            landmarkType = "7">
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8A08D602-34F0-4122-B09B-7E3BB4C35400"
+            uuid = "A5E8905C-28C6-49E7-A975-E770969970EF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LocalGuideSwiftUI/DataLayer/restService/User/UserService.swift"
+            filePath = "LocalGuideSwiftUI/View/Authentication/SignUpView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "registerUser(registerUser:completion:)"
-            landmarkType = "7">
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

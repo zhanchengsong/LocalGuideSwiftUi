@@ -19,6 +19,7 @@ PODS:
     - SwiftProtobuf (< 2.0.0, >= 1.9.0)
   - gRPC-Swift-Plugins (1.0.0):
     - gRPC-Swift (= 1.0.0)
+  - Locksmith (4.0.0)
   - Logging (1.4.0)
   - SwiftNIO (2.27.0):
     - CNIODarwin (= 2.27.0)
@@ -63,6 +64,7 @@ PODS:
 DEPENDENCIES:
   - gRPC-Swift (~> 1.0.0)
   - gRPC-Swift-Plugins
+  - Locksmith
 
 SPEC REPOS:
   trunk:
@@ -76,6 +78,7 @@ SPEC REPOS:
     - CNIOWindows
     - gRPC-Swift
     - gRPC-Swift-Plugins
+    - Locksmith
     - Logging
     - SwiftNIO
     - SwiftNIOConcurrencyHelpers
@@ -100,6 +103,7 @@ SPEC CHECKSUMS:
   CNIOWindows: f2baa102255e986467578337ffa2f777cb6bdf7f
   gRPC-Swift: 77154009a019e97f8c4bd8f2bb75fe9726801157
   gRPC-Swift-Plugins: 22f2e8578f332e72ee59671c63264e219c982755
+  Locksmith: e9bebbaaa4cee3c511bc358a44f843c3fe00e21f
   Logging: beeb016c9c80cf77042d62e83495816847ef108b
   SwiftNIO: 81d33ce8c500b7e41b6cdde5f2f12330b9750219
   SwiftNIOConcurrencyHelpers: 23fc68bac541a465162d7225d2c743edd2f1012c
@@ -113,6 +117,6 @@ SPEC CHECKSUMS:
   SwiftNIOTransportServices: 896c9a4ac98698d32aa2feea7657ade219ae80bb
   SwiftProtobuf: 4e16842b83c6fda06b10fac50d73b3f1fce8ab7b
 
-PODFILE CHECKSUM: b49d333d28de44601145a9a905be424b71058158
+PODFILE CHECKSUM: 7f2331e462ca7757d6dede1cb55c4a5d7a31820a
 
 COCOAPODS: 1.10.1

@@ -53,11 +53,7 @@ struct SignUpView: View {
                 Button(action: {
                     let userManager = UserManager.shared
                     let registerUserBody = UserRegistrationRequest(username: self.username, displayName: self.displayName, email: self.email, password: self.password)
-                    let createUserResult = userManager.registerUserAndSaveToken(userReq: registerUserBody)
-                    if (createUserResult != "") {
-                        let keyChainJWT = UserKeyChainManager.getJWTToken(userId: createUserResult)
-                        print("Fetched jwt from KeyChain: " + keyChainJWT)
-                    }
+                    userManager.registerUserAndSaveToken(userReq: registerUserBody)
                 }, label: {
                     Text("Sign up")
                         .font(.headline)

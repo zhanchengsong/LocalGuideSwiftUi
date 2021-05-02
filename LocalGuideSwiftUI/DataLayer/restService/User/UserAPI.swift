@@ -42,4 +42,14 @@ class UserAPI {
             return Result.failure(error)
         }
     }
+    
+    static func parseError(fromJson data: Data) -> Result<UserError, Error> {
+        do {
+            let decoder = JSONDecoder()
+            let user = try decoder.decode(UserError.self, from: data)
+            return Result.success(user)
+        } catch {
+            return Result.failure(error)
+        }
+    }
 }

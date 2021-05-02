@@ -18,7 +18,10 @@ class UserService {
         session = URLSession(configuration: config)
     }
     
-    func registerUser(registerUser: UserRegistrationRequest, completion: @escaping (Result<UserModel, Error>) -> Void) {
+    func registerUser(registerUser: UserRegistrationRequest,
+                      successCompletion: @escaping (Result<UserModel, Error>) -> Void,
+                      errorCompletion: @escaping (Result<UserError, Error>) -> Void) {
+
         do {
             let jsonBody = try JSONEncoder().encode(registerUser)
             let url = UserAPI.registerUserUrl
@@ -27,11 +30,18 @@ class UserService {
             request.httpBody = jsonBody
             let task = session.dataTask(with: request) {
                 (data, response, error) in
+                if let httpResponse = response as? HTTPURLResponse {
+                    let statusCode = httpResponse.statusCode
+                    if (statusCode != 201) {
+                        let result = self.processError(data: data, error: error)
+                        errorCompletion(result)
+                        return
+                    }
+                }
                 let result = self.processUserResponse(data: data, error: error)
-                completion(result)
-        }
+                successCompletion(result)
+            }
             task.resume()
-            
         } catch {
             print(error)
         }
@@ -44,5 +54,11 @@ class UserService {
         return UserAPI.parseUser(fromJson: jsonData)
     }
     
+    func processError(data: Data?, error: Error?) -> Result<UserError, Error> {
+        guard let jsonData = data else {
+            return .failure(error!)
+        }
+        return UserAPI.parseError(fromJson: jsonData)
+    }
     
 }

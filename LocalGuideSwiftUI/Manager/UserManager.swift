@@ -15,14 +15,13 @@ class UserManager {
     
     // Register a user and save the Tokens in the keychain if successful.
     // Return true if success, false on error
-    public func registerUserAndSaveToken(userReq: UserRegistrationRequest) -> String {
-        var userId: String = ""
-        userService.registerUser(registerUser: userReq, completion:{
+    public func registerUserAndSaveToken(userReq: UserRegistrationRequest) {
+        userService.registerUser(registerUser: userReq,
+        successCompletion:{
             result in
                 switch result {
                     case .success(let user): do {
                         print(user)
-                        userId = user.userId
                         UserKeyChainManager.saveJWTToken(token: user.jwtToken, userId: user.userId)
                     }
                     case .failure(let error): do {
@@ -30,7 +29,18 @@ class UserManager {
                     }
             
             }
-        } )
-        return userId
+        },
+        errorCompletion:{
+            errorResult in
+            switch errorResult {
+                case .success(let userError): do {
+                    print(userError)
+                }
+                case .failure(let error): do {
+                    print(error)
+                }
+        
+            }
+        })
     }
 }

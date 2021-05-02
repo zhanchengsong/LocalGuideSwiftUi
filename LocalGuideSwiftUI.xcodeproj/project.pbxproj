@@ -31,6 +31,9 @@
 		A21C4F802634C5FF00EA3F24 /* GeneralSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C4F7F2634C5FF00EA3F24 /* GeneralSecureField.swift */; };
 		A235F7A2262DC16B00BE5050 /* ContentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A235F7A1262DC16B00BE5050 /* ContentCard.swift */; };
 		A235F7AA262EA68700BE5050 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A235F7A9262EA68700BE5050 /* SearchView.swift */; };
+		A2EFEB83263EAA530038E28D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EFEB82263EAA530038E28D /* UserService.swift */; };
+		A2EFEB86263EAAC80038E28D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EFEB85263EAAC80038E28D /* UserModel.swift */; };
+		A2EFEB89263EAE910038E28D /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EFEB88263EAE910038E28D /* UserAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		A21C4F7F2634C5FF00EA3F24 /* GeneralSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSecureField.swift; sourceTree = "<group>"; };
 		A235F7A1262DC16B00BE5050 /* ContentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCard.swift; sourceTree = "<group>"; };
 		A235F7A9262EA68700BE5050 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		A2EFEB82263EAA530038E28D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		A2EFEB85263EAAC80038E28D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		A2EFEB88263EAE910038E28D /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		B96F85C54C64CAA50A79A0CD /* Pods-LocalGuideSwiftUI-LocalGuideSwiftUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalGuideSwiftUI-LocalGuideSwiftUIUITests.release.xcconfig"; path = "Target Support Files/Pods-LocalGuideSwiftUI-LocalGuideSwiftUIUITests/Pods-LocalGuideSwiftUI-LocalGuideSwiftUIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CF4E4E19AB8BA007EC5D3C9F /* Pods-LocalGuideSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalGuideSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-LocalGuideSwiftUITests/Pods-LocalGuideSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D98855EAE329B78DFF6F1F13 /* Pods-LocalGuideSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalGuideSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-LocalGuideSwiftUI/Pods-LocalGuideSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
@@ -224,6 +230,8 @@
 		A20BA5472637A53D00F6CF2B /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				A2EFEB84263EAAB70038E28D /* transferObjects */,
+				A2EFEB81263EAA3B0038E28D /* restService */,
 				A20BA5482637A54600F6CF2B /* gRPC */,
 			);
 			path = DataLayer;
@@ -272,6 +280,31 @@
 			children = (
 			);
 			path = Content;
+			sourceTree = "<group>";
+		};
+		A2EFEB81263EAA3B0038E28D /* restService */ = {
+			isa = PBXGroup;
+			children = (
+				A2EFEB87263EAE760038E28D /* User */,
+			);
+			path = restService;
+			sourceTree = "<group>";
+		};
+		A2EFEB84263EAAB70038E28D /* transferObjects */ = {
+			isa = PBXGroup;
+			children = (
+				A2EFEB85263EAAC80038E28D /* UserModel.swift */,
+			);
+			path = transferObjects;
+			sourceTree = "<group>";
+		};
+		A2EFEB87263EAE760038E28D /* User */ = {
+			isa = PBXGroup;
+			children = (
+				A2EFEB82263EAA530038E28D /* UserService.swift */,
+				A2EFEB88263EAE910038E28D /* UserAPI.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		C02FD2762B97BF602A7D70D4 /* Pods */ = {
@@ -526,6 +559,7 @@
 			files = (
 				3ECC6DE3262CE4DA000F8706 /* FeedView.swift in Sources */,
 				A235F7A2262DC16B00BE5050 /* ContentCard.swift in Sources */,
+				A2EFEB83263EAA530038E28D /* UserService.swift in Sources */,
 				3ECC6DB6262CD73B000F8706 /* Persistence.swift in Sources */,
 				A20BA59C2637C03500F6CF2B /* ImagePicker.swift in Sources */,
 				A235F7AA262EA68700BE5050 /* SearchView.swift in Sources */,
@@ -536,8 +570,10 @@
 				A20BA5542637A7C700F6CF2B /* media.pb.swift in Sources */,
 				A21C4F802634C5FF00EA3F24 /* GeneralSecureField.swift in Sources */,
 				3ECC6DB9262CD73B000F8706 /* LocalGuideSwiftUI.xcdatamodeld in Sources */,
+				A2EFEB89263EAE910038E28D /* UserAPI.swift in Sources */,
 				A21C4F762634BC8300EA3F24 /* GeneralTextField.swift in Sources */,
 				A20BA5942637BD7600F6CF2B /* ImageTestView.swift in Sources */,
+				A2EFEB86263EAAC80038E28D /* UserModel.swift in Sources */,
 				A21C4F7B2634BED100EA3F24 /* LoginView.swift in Sources */,
 				3ECC6DAD262CD73A000F8706 /* LocalGuideSwiftUIApp.swift in Sources */,
 				A20BA5532637A7C700F6CF2B /* media.grpc.swift in Sources */,

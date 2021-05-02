@@ -32,6 +32,11 @@ struct ContentView: View {
                         Image (systemName: "doc")
                         Text("test")
                     }
+                SignUpView()
+                    .tabItem {
+                        Image (systemName: "pencil")
+                        Text("SignUp")
+                    }
             }
         }.navigationBarTitle("Home")
         .navigationBarTitleDisplayMode(.inline)

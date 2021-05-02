@@ -11,7 +11,7 @@ struct GeneralTextField: View {
     @Binding var text: String
     let placeholder: Text
     let imageName: String
-    
+    let hasError: Bool
     
     var body: some View {
         ZStack(alignment:.leading) {

@@ -21,7 +21,7 @@ struct LoginView: View {
                     .padding(.top, 88)
                     .padding(.bottom, 100)
                 VStack(spacing: 16) {
-                    GeneralTextField(text:$email, placeholder: Text("Email"), imageName: "envelope")
+                    GeneralTextField(text:$email, placeholder: Text("Email"), imageName: "envelope", hasError: false)
                         .padding()
                         .background(Color(.init(gray:1, alpha:0.30)))
                         .cornerRadius(10)
@@ -68,6 +68,10 @@ struct LoginView: View {
         }
         .background((Color("primaryPink")))
         .ignoresSafeArea()
+    }
+    
+    func onEmailEnter(input: String) -> Bool {
+        return false
     }
 }
 

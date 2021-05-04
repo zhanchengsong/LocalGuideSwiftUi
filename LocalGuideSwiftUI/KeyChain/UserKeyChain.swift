@@ -36,4 +36,13 @@ class UserKeyChainManager {
         let dictionary = Locksmith.loadDataForUserAccount(userAccount: userId)
         return dictionary!["refreshToken"] as! String
     }
+    
+    public static func updateJWTToken(token: String, userId: String) {
+        do {
+            try Locksmith.updateData(data: ["jwtToken": token], forUserAccount: "myUserAccount")
+        }
+        catch {
+            print(error)
+        }
+    }
 }

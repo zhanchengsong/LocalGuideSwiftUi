@@ -17,20 +17,10 @@ struct ContentView: View {
                         Image (systemName: "house")
                         Text("Home")
                     }
-                Text("Search")
+                UserProfileView()
                     .tabItem {
-                        Image (systemName: "magnifyingglass")
-                        Text("Search")
-                    }
-                Text("Messages")
-                    .tabItem {
-                        Image (systemName: "envelope")
-                        Text("Messages")
-                    }
-                ImageTestView()
-                    .tabItem {
-                        Image (systemName: "doc")
-                        Text("test")
+                        Image(systemName: "person")
+                        Text("")
                     }
                 SignUpView()
                     .tabItem {

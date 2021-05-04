@@ -17,15 +17,28 @@ struct SignUpView: View {
     @State var passwordError = ""
     @State var displayNameError = ""
     @State var usernameError = ""
+    
+    @State var showImagePicker = false
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    
     var body: some View {
         ZStack {
             VStack {
-                Image("LGIcon")
+                Image(systemName: "person")
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 110, height: 50)
-                    .padding(.top, 88)
-                    .padding(.bottom, 100)
+                    .frame(width: 120, height: 120)
+                    .foregroundColor(Color("primaryPinkText"))
+                    .background(Color.white)
+                    .clipShape(Circle())
+                    .padding(.top, 100)
+                    .padding(.bottom, 50)
+                    .onTapGesture {
+                        showImagePicker.toggle()
+                    }
+                    .sheet(isPresented: $showImagePicker, content: {
+                        ImagePicker()
+                    })
                 VStack(spacing: 16) {
                     GeneralTextField(text:$displayName, placeholder: Text("Display Name"), imageName: "person", hasError: false)
                         .padding()
@@ -67,14 +80,22 @@ struct SignUpView: View {
                 
                 Spacer()
                 
-                HStack {
-                    Text("Have an account ? ")
-                        .font(.system(size:14))
-                    Text("Log in")
-                        .font(.system(size:14, weight: .bold))
-                }.foregroundColor(Color("primaryPinkText"))
-                .padding(.bottom, 40)
+                Button(
+                    action: {
+                        mode.wrappedValue.dismiss()
+                    }, label: {
+                        HStack {
+                            Text("Have an account ? ")
+                                .font(.system(size:14))
+                            Text("Log in")
+                                .font(.system(size:14, weight: .bold))
+                        }.foregroundColor(Color("primaryPinkText"))
+                        .padding(.bottom, 40)
+                    }
+                )
+                
             }
+            
         }
         .background((Color("primaryPink")))
         .ignoresSafeArea()
@@ -83,10 +104,12 @@ struct SignUpView: View {
     func onDisplayNameEnter(input: String) -> Bool{
         return true
     }
-}
-
-struct SignUpView_Previews: PreviewProvider {
-    static var previews: some View {
-        SignUpView()
+    
+    
+    struct SignUpView_Previews: PreviewProvider {
+        static var previews: some View {
+            SignUpView()
+        }
     }
+    
 }

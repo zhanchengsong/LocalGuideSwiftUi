@@ -19,26 +19,55 @@ struct SignUpView: View {
     @State var usernameError = ""
     
     @State var showImagePicker = false
+    @State var image: Image?
+    @State var selectedImage: UIImage?
+    
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    @EnvironmentObject var authViewModel: AuthViewModel
+    
+    func loadImage() {
+        guard let selectedImage = selectedImage else { return }
+        image = Image(uiImage: selectedImage)
+    }
     
     var body: some View {
         ZStack {
             VStack {
-                Image(systemName: "person")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 120, height: 120)
-                    .foregroundColor(Color("primaryPinkText"))
-                    .background(Color.white)
-                    .clipShape(Circle())
-                    .padding(.top, 100)
-                    .padding(.bottom, 50)
-                    .onTapGesture {
-                        showImagePicker.toggle()
+                    if let image = image {
+                        image
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 120, height: 120)
+                            .foregroundColor(Color("primaryPinkText"))
+                            .background(Color.white)
+                            .clipShape(Circle())
+                            .padding(.top, 100)
+                            .padding(.bottom, 50)
+                            .onTapGesture {
+                                showImagePicker.toggle()
+                            }
+                            .sheet(isPresented: $showImagePicker,onDismiss: loadImage, content: {
+                                ImagePicker(image: $selectedImage)
+                            })
+                        
                     }
-                    .sheet(isPresented: $showImagePicker, content: {
-                        ImagePicker()
-                    })
+                    else {
+                        Image(systemName: "person")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 120, height: 120)
+                            .foregroundColor(Color("primaryPinkText"))
+                            .background(Color.white)
+                            .clipShape(Circle())
+                            .padding(.top, 100)
+                            .padding(.bottom, 50)
+                            .onTapGesture {
+                                showImagePicker.toggle()
+                            }
+                            .sheet(isPresented: $showImagePicker, onDismiss: loadImage, content: {
+                                ImagePicker(image: $selectedImage)
+                            })
+                }
                 VStack(spacing: 16) {
                     GeneralTextField(text:$displayName, placeholder: Text("Display Name"), imageName: "person", hasError: false)
                         .padding()
@@ -64,9 +93,8 @@ struct SignUpView: View {
                 
                 
                 Button(action: {
-                    let userManager = UserManager.shared
-                    let registerUserBody = UserRegistrationRequest(username: self.username, displayName: self.displayName, email: self.email, password: self.password)
-                    userManager.registerUserAndSaveToken(userReq: registerUserBody)
+                    guard let selectedImage = selectedImage else { return }
+                    authViewModel.signup(email: email, displayName: displayName, username: username, password: password, profileImage: selectedImage)
                 }, label: {
                     Text("Sign up")
                         .font(.headline)

@@ -104,7 +104,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "9257F4F9-0D33-4CA9-8C87-B4B66740C076"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LocalGuideSwiftUI/DataLayer/restService/User/UserService.swift"
@@ -120,7 +120,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "8A08D602-34F0-4122-B09B-7E3BB4C35400"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LocalGuideSwiftUI/DataLayer/restService/User/UserService.swift"
@@ -129,6 +129,86 @@
             startingLineNumber = "24"
             endingLineNumber = "24"
             landmarkName = "registerUser(registerUser:successCompletion:errorCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FAA707C0-4A31-472F-8A61-1ED0E0FC7523"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocalGuideSwiftUI/ViewModal/Authentication/AuthViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "login(username:password:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FAA707C0-4A31-472F-8A61-1ED0E0FC7523 - 423a9a0e4c428c4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LocalGuideSwiftUI.AuthViewModel.login(username: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "LocalGuideSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhanchengsong/LocalGuide/LocalGuideSwiftUi/LocalGuideSwiftUI/ViewModal/Authentication/AuthViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "FAA707C0-4A31-472F-8A61-1ED0E0FC7523 - 1fb7969693760607"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;LocalGuideSwiftUI.UserModel, Swift.Error&gt;) -&gt; () in LocalGuideSwiftUI.AuthViewModel.login(username: Swift.String, password: Swift.String) -&gt; ()"
+                  moduleName = "LocalGuideSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhanchengsong/LocalGuide/LocalGuideSwiftUi/LocalGuideSwiftUI/ViewModal/Authentication/AuthViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "192">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD368612-1667-4F8F-880F-4C142F79FC86"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocalGuideSwiftUI/DataLayer/restService/User/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "loginUser(loginUser:successCompletion:errorCompletion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "076B1C5B-B9A2-4B1A-8E54-91E34E4206F1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocalGuideSwiftUI/DataLayer/restService/User/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "loginUser(loginUser:successCompletion:errorCompletion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

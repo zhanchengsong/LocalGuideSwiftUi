@@ -13,8 +13,7 @@ struct LocalGuideSwiftUIApp: App {
 
     var body: some Scene {
         WindowGroup {
-            LoginView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            ContentView().environmentObject(AuthViewModel())
         }
     }
 }

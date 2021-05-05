@@ -40,6 +40,8 @@
 		A2EFEB83263EAA530038E28D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EFEB82263EAA530038E28D /* UserService.swift */; };
 		A2EFEB86263EAAC80038E28D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EFEB85263EAAC80038E28D /* UserModel.swift */; };
 		A2EFEB89263EAE910038E28D /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EFEB88263EAE910038E28D /* UserAPI.swift */; };
+		A2F13C072642461100DDBB56 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F13C062642461100DDBB56 /* AuthViewModel.swift */; };
+		A2F13C0926424FE200DDBB56 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F13C0826424FE200DDBB56 /* UserSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,8 @@
 		A2EFEB82263EAA530038E28D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		A2EFEB85263EAAC80038E28D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		A2EFEB88263EAE910038E28D /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		A2F13C062642461100DDBB56 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		A2F13C0826424FE200DDBB56 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserSession.swift; path = LocalGuideSwiftUI/ViewModal/Authentication/UserSession.swift; sourceTree = SOURCE_ROOT; };
 		B96F85C54C64CAA50A79A0CD /* Pods-LocalGuideSwiftUI-LocalGuideSwiftUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalGuideSwiftUI-LocalGuideSwiftUIUITests.release.xcconfig"; path = "Target Support Files/Pods-LocalGuideSwiftUI-LocalGuideSwiftUIUITests/Pods-LocalGuideSwiftUI-LocalGuideSwiftUIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CF4E4E19AB8BA007EC5D3C9F /* Pods-LocalGuideSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalGuideSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-LocalGuideSwiftUITests/Pods-LocalGuideSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D98855EAE329B78DFF6F1F13 /* Pods-LocalGuideSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalGuideSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-LocalGuideSwiftUI/Pods-LocalGuideSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +211,7 @@
 		3ECC6DDF262CE473000F8706 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				A2F13C0826424FE200DDBB56 /* UserSession.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 		3ECC6DE0262CE496000F8706 /* ViewModal */ = {
 			isa = PBXGroup;
 			children = (
+				A2F13C05264245F900DDBB56 /* Authentication */,
 			);
 			path = ViewModal;
 			sourceTree = "<group>";
@@ -349,6 +355,14 @@
 				A2EFEB88263EAE910038E28D /* UserAPI.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		A2F13C05264245F900DDBB56 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A2F13C062642461100DDBB56 /* AuthViewModel.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		C02FD2762B97BF602A7D70D4 /* Pods */ = {
@@ -604,6 +618,7 @@
 				A24C0F94263FC23B00FF57F1 /* FilterButtonView.swift in Sources */,
 				3ECC6DE3262CE4DA000F8706 /* FeedView.swift in Sources */,
 				A235F7A2262DC16B00BE5050 /* ContentCard.swift in Sources */,
+				A2F13C0926424FE200DDBB56 /* UserSession.swift in Sources */,
 				A2EFEB83263EAA530038E28D /* UserService.swift in Sources */,
 				3ECC6DB6262CD73B000F8706 /* Persistence.swift in Sources */,
 				A235F7AA262EA68700BE5050 /* SearchView.swift in Sources */,
@@ -618,6 +633,7 @@
 				A21C4F802634C5FF00EA3F24 /* GeneralSecureField.swift in Sources */,
 				3ECC6DB9262CD73B000F8706 /* LocalGuideSwiftUI.xcdatamodeld in Sources */,
 				A24C0F9626411EB500FF57F1 /* ImagePicker.swift in Sources */,
+				A2F13C072642461100DDBB56 /* AuthViewModel.swift in Sources */,
 				A2EFEB89263EAE910038E28D /* UserAPI.swift in Sources */,
 				A24C0F90263FB4EE00FF57F1 /* UserProfileHeaderView.swift in Sources */,
 				A21C4F762634BC8300EA3F24 /* GeneralTextField.swift in Sources */,

@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct UserProfileView: View {
+    @EnvironmentObject var authViewModel: AuthViewModel
     @State var selectedOption: TweetFilterOptions = TweetFilterOptions.posts
     var body: some View {
         ScrollView {
             
             VStack {
-                UserProfileHeaderView().padding()
+                UserProfileHeaderView(
+                    displayName: authViewModel.userSession!.displayName , username: (authViewModel.userSession!.username)
+                    
+                ).padding()
                 FilterButtonView(selectedOption: $selectedOption)
             }
             .navigationTitle("Display Name")

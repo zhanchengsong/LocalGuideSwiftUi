@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct UserProfileHeaderView: View {
+    var displayName: String
+    var username: String
     var body: some View {
         VStack {
             Image(systemName: "person").resizable().scaledToFill().clipShape(Circle()).frame(width: 120, height: 120)
                 .shadow(color: .black, radius: 10, x: 0.0, y: 0.0)
             
-            Text("Display Name")
+            Text(displayName)
                 .font(.system(size: 16, weight: .semibold))
             
-            Text("@username")
+            Text("@\(username)")
                 .font(.subheadline)
                 .foregroundColor(.gray)
             
@@ -43,6 +45,7 @@ struct UserProfileHeaderView: View {
 
 struct UserProfileHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        UserProfileHeaderView()
+        UserProfileHeaderView(
+            displayName: "testDisplayname", username: "testusername")
     }
 }

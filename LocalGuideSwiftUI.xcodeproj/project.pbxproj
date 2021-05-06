@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,7 @@
 		A20BA5532637A7C700F6CF2B /* media.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20BA5512637A7C700F6CF2B /* media.grpc.swift */; };
 		A20BA5542637A7C700F6CF2B /* media.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20BA5522637A7C700F6CF2B /* media.pb.swift */; };
 		A20BA5592637A82D00F6CF2B /* mediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20BA5582637A82D00F6CF2B /* mediaService.swift */; };
+		A20CBDAC2644A96400F174A3 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A20CBDAB2644A96400F174A3 /* KeychainSwift */; };
 		A21C4F712634BC7500EA3F24 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C4F702634BC7500EA3F24 /* SignUpView.swift */; };
 		A21C4F762634BC8300EA3F24 /* GeneralTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C4F752634BC8300EA3F24 /* GeneralTextField.swift */; };
 		A21C4F7B2634BED100EA3F24 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C4F7A2634BED100EA3F24 /* LoginView.swift */; };
@@ -117,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A20CBDAC2644A96400F174A3 /* KeychainSwift in Frameworks */,
 				041AB330A9539B69317DD62D /* Pods_LocalGuideSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +167,7 @@
 		3ECC6DAB262CD73A000F8706 /* LocalGuideSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				A2F13C0A26438A5B00DDBB56 /* CoreData */,
 				A2295721263F44B0000056CA /* Manager */,
 				A2295718263F435A000056CA /* KeyChain */,
 				A2295717263F4311000056CA /* LocalGuideSwiftUI.entitlements */,
@@ -365,6 +368,13 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		A2F13C0A26438A5B00DDBB56 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		C02FD2762B97BF602A7D70D4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +406,9 @@
 			dependencies = (
 			);
 			name = LocalGuideSwiftUI;
+			packageProductDependencies = (
+				A20CBDAB2644A96400F174A3 /* KeychainSwift */,
+			);
 			productName = LocalGuideSwiftUI;
 			productReference = 3ECC6DA9262CD73A000F8706 /* LocalGuideSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -470,6 +483,9 @@
 				Base,
 			);
 			mainGroup = 3ECC6DA0262CD73A000F8706;
+			packageReferences = (
+				A20CBDAA2644A96400F174A3 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 3ECC6DAA262CD73A000F8706 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -813,6 +829,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.zhancheng.LocalGuideSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -966,6 +984,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A20CBDAA2644A96400F174A3 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 19.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A20CBDAB2644A96400F174A3 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A20CBDAA2644A96400F174A3 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3ECC6DB7262CD73B000F8706 /* LocalGuideSwiftUI.xcdatamodeld */ = {

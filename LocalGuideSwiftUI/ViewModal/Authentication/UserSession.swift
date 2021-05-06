@@ -14,7 +14,7 @@ struct UserSession {
     let userId: String;
     let displayName: String;
     let email: String;
-    let jwtToken: String;
-    let refreshToken: String;
-    let profileImage: Image;
+    var jwtToken: String;
+    var refreshToken: String;
+    var profileImage: Image?;
 }

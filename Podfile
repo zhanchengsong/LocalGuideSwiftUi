@@ -8,7 +8,6 @@ target 'LocalGuideSwiftUI' do
   # Pods for LocalGuideSwiftUI
   pod 'gRPC-Swift', '~> 1.0.0'
   pod 'gRPC-Swift-Plugins'
-  pod 'Locksmith'
   target 'LocalGuideSwiftUITests' do
     inherit! :search_paths
     # Pods for testing

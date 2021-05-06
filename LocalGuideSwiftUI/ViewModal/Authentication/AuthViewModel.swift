@@ -14,15 +14,35 @@ class AuthViewModel: ObservableObject {
     @Published var error: Error?
     @Published var isSuccessful = false
     
+    private var userKeyChain = UserKeyChainManager.shared
     private var mediaService = MediaService.shared
+    private var userManager = UserManager.shared
     
     init() {
         // Try to grab user from localStorage
         // And then fetch JWT/RefreshToken
+        self.userSession = {
+            let userSession = userManager.loadUserSession()
+            guard var userSession = userSession else {return nil}
+            
+            let jwtToken = self.userKeyChain.getJWTToken(userId: userSession.userId)
+            guard let jwtToken = jwtToken else {
+                print("Unable to read jwtToken")
+                return nil
+            }
+            let refreshToken = self.userKeyChain.getRefreshToken(userId: userSession.userId)
+            guard let refreshToken = refreshToken else {
+                print("Unable to read refreshToken")
+                return nil
+            }
+            userSession.jwtToken = jwtToken
+            userSession.refreshToken = refreshToken
+            return userSession
+        }()
         
     }
     
-    let userManager = UserManager.shared
+   
     
     func login(username: String, password: String) {
         let loginUser = UserSignInRequest(username: username, password: password)

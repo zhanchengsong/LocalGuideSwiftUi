@@ -6,43 +6,45 @@
 //
 
 import Foundation
-import Locksmith
+import KeychainSwift
 
 class UserKeyChainManager {
+    private var keyChain = KeychainSwift()
     public static let shared = UserKeyChainManager()
     
-    public static func saveJWTToken(token: String, userId: String) {
-        do {
-            try Locksmith.saveData(data: ["jwtToken": token], forUserAccount: userId)
-        } catch {
-            print(error)
+    public func saveJWTToken(token: String, userId: String) {
+        if ( self.keyChain.set(token, forKey: userId + "_jwtToken") ) {
+            print("successfully saved JWTToken")
         }
     }
     
-    public static func saveRefreshToken(token: String, userId: String) {
-        do {
-            try Locksmith.saveData(data: ["refreshToken": token], forUserAccount: userId)
-        } catch {
-            print(error)
+    public func saveRefreshToken(token: String, userId: String) {
+        if ( self.keyChain.set(token, forKey: userId + "_refreshToken") ) {
+            print("successfully saved refresToken")
         }
     }
     
-    public static func getJWTToken(userId: String) -> String {
-        let dictionary = Locksmith.loadDataForUserAccount(userAccount: userId)
-        return dictionary!["jwtToken"] as! String
+    public func getJWTToken(userId: String) -> String? {
+        guard let data = keyChain.getData(userId + "_jwtToken") else {return nil}
+        print("read jwtToken success from keychain: " + String(decoding: data, as:UTF8.self))
+        return String(decoding: data, as:UTF8.self)
     }
     
-    public static func getRefreshToken(userId: String) -> String {
-        let dictionary = Locksmith.loadDataForUserAccount(userAccount: userId)
-        return dictionary!["refreshToken"] as! String
+    public func getRefreshToken(userId: String) -> String? {
+        guard let data = keyChain.getData(userId + "_refreshToken") else {return nil}
+        print("read refresh success from keychain: " + String(decoding: data, as:UTF8.self))
+        return String(decoding: data, as:UTF8.self)
     }
     
-    public static func updateJWTToken(token: String, userId: String) {
-        do {
-            try Locksmith.updateData(data: ["jwtToken": token], forUserAccount: "myUserAccount")
+    public func updateJWTToken(token: String, userId: String) {
+        if (keyChain.set(token, forKey: userId + "_jwtToken")) {
+            print("succesfully updated jwtToken")
         }
-        catch {
-            print(error)
+    }
+    
+    public func updateRefreshToken(token: String, userId: String) {
+        if ( self.keyChain.set(token, forKey: userId + "_refreshToken") ) {
+            print("successfully updated refresToken")
         }
     }
 }

@@ -16,7 +16,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
             endingLineNumber = "43"
-            landmarkName = "upLoadImage(imageData:)"
+            landmarkName = "uploadImage(imageData:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -32,7 +32,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
-            landmarkName = "upLoadImage(imageData:)"
+            landmarkName = "uploadImage(imageData:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -48,7 +48,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
             endingLineNumber = "45"
-            landmarkName = "upLoadImage(imageData:)"
+            landmarkName = "uploadImage(imageData:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -64,7 +64,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
             endingLineNumber = "42"
-            landmarkName = "upLoadImage(imageData:)"
+            landmarkName = "uploadImage(imageData:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -72,7 +72,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E20DAB9C-5623-47B4-9D71-79CEFF4A7727"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LocalGuideSwiftUI/DataLayer/gRPC/mediaService.swift"
@@ -142,13 +142,13 @@
             filePath = "LocalGuideSwiftUI/ViewModal/Authentication/AuthViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "login(username:password:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "FAA707C0-4A31-472F-8A61-1ED0E0FC7523 - 423a9a0e4c428c4d"
+                  uuid = "FAA707C0-4A31-472F-8A61-1ED0E0FC7523 - 423a9a0e4c428a80"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -158,12 +158,12 @@
                   urlString = "file:///Users/zhanchengsong/LocalGuide/LocalGuideSwiftUi/LocalGuideSwiftUI/ViewModal/Authentication/AuthViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "176">
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "44">
                </Location>
                <Location
-                  uuid = "FAA707C0-4A31-472F-8A61-1ED0E0FC7523 - 1fb7969693760607"
+                  uuid = "FAA707C0-4A31-472F-8A61-1ED0E0FC7523 - 1fb7969693760352"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -173,9 +173,9 @@
                   urlString = "file:///Users/zhanchengsong/LocalGuide/LocalGuideSwiftUi/LocalGuideSwiftUI/ViewModal/Authentication/AuthViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "192">
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "120">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -210,6 +210,149 @@
             endingLineNumber = "63"
             landmarkName = "loginUser(loginUser:successCompletion:errorCompletion:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C9288E48-5FF2-4562-BCCD-4544B58ABB6A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocalGuideSwiftUI/ViewModal/Authentication/AuthViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E4753BC6-C5DD-4F0C-9BF8-55B91C97C68E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocalGuideSwiftUI/ViewModal/Authentication/AuthViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "213F6089-BC14-4EAB-8ABB-4D607C1EDD53"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocalGuideSwiftUI/ViewModal/Authentication/AuthViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EF2D5FBD-AB27-45F1-9E4B-391F728150D3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocalGuideSwiftUI/Manager/UserManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "loginUserAndSaveToken(userReq:onComplete:onError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "653F65EB-BAC1-409A-88B3-E328E997DFB5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocalGuideSwiftUI/Manager/UserManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "loginUserAndSaveToken(userReq:onComplete:onError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "325D9859-71FF-4100-A494-EA58873E19AF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LocalGuideSwiftUI/Manager/UserManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "loginUserAndSaveToken(userReq:onComplete:onError:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "325D9859-71FF-4100-A494-EA58873E19AF - 74f25b23effc23c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;LocalGuideSwiftUI.UserModel, Swift.Error&gt;) -&gt; () in LocalGuideSwiftUI.UserManager.loginUserAndSaveToken(userReq: LocalGuideSwiftUI.UserSignInRequest, onComplete: (Swift.Result&lt;LocalGuideSwiftUI.UserModel, Swift.Error&gt;) -&gt; (), onError: (Swift.Result&lt;LocalGuideSwiftUI.UserError, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "LocalGuideSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhanchengsong/LocalGuide/LocalGuideSwiftUi/LocalGuideSwiftUI/Manager/UserManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "325D9859-71FF-4100-A494-EA58873E19AF - 74f25b23effc23c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;LocalGuideSwiftUI.UserModel, Swift.Error&gt;) -&gt; () in LocalGuideSwiftUI.UserManager.loginUserAndSaveToken(userReq: LocalGuideSwiftUI.UserSignInRequest, onComplete: (Swift.Result&lt;LocalGuideSwiftUI.UserModel, Swift.Error&gt;) -&gt; (), onError: (Swift.Result&lt;LocalGuideSwiftUI.UserError, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "LocalGuideSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhanchengsong/LocalGuide/LocalGuideSwiftUi/LocalGuideSwiftUI/Manager/UserManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "325D9859-71FF-4100-A494-EA58873E19AF - 74f25b23effc23c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;LocalGuideSwiftUI.UserModel, Swift.Error&gt;) -&gt; () in LocalGuideSwiftUI.UserManager.loginUserAndSaveToken(userReq: LocalGuideSwiftUI.UserSignInRequest, onComplete: (Swift.Result&lt;LocalGuideSwiftUI.UserModel, Swift.Error&gt;) -&gt; (), onError: (Swift.Result&lt;LocalGuideSwiftUI.UserError, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "LocalGuideSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zhanchengsong/LocalGuide/LocalGuideSwiftUi/LocalGuideSwiftUI/Manager/UserManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "216">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

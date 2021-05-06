@@ -10,10 +10,14 @@ import SwiftUI
 @main
 struct LocalGuideSwiftUIApp: App {
     let persistenceController = PersistenceController.shared
-
+    @Environment(\.scenePhase) var scenePhase
+    let authViewModel = AuthViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(AuthViewModel())
+            ContentView().environmentObject(authViewModel).environment(\.managedObjectContext, persistenceController.container.viewContext)
+        }
+        .onChange(of: scenePhase) { _ in
+            persistenceController.save()
         }
     }
 }

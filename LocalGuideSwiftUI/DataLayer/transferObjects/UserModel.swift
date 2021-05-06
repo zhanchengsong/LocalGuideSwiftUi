@@ -15,11 +15,18 @@ struct UserModel : Codable{
     let password: String?;
     let jwtToken: String;
     let refreshToken: String;
+    let imageId: String?;
 }
 
 struct UserRegistrationRequest : Codable {
     let username: String;
     let displayName: String;
     let email: String;
+    let password: String;
+    let imageId: String;
+}
+
+struct UserSignInRequest : Codable {
+    let username: String;
     let password: String;
 }

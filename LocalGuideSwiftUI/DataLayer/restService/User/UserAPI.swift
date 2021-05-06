@@ -33,10 +33,24 @@ class UserAPI {
         return userURL(endpoint: UserEndpoint.user)
     }
     
+    static var loginUserUrl: URL {
+        return userURL(endpoint: UserEndpoint.login)
+    }
+    
     static func parseUser(fromJson data: Data) -> Result<UserModel, Error> {
         do {
             let decoder = JSONDecoder()
             let user = try decoder.decode(UserModel.self, from: data)
+            return Result.success(user)
+        } catch {
+            return Result.failure(error)
+        }
+    }
+    
+    static func parseError(fromJson data: Data) -> Result<UserError, Error> {
+        do {
+            let decoder = JSONDecoder()
+            let user = try decoder.decode(UserError.self, from: data)
             return Result.success(user)
         } catch {
             return Result.failure(error)

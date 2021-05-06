@@ -39,7 +39,7 @@ class MediaService {
         return client
     }
     
-    func upLoadImage(imageData: Data) {
+    func uploadImage(imageData: Data) -> String {
         var uploadRequest = MediaProto_ImageUploadRequest()
         uploadRequest.imageName = "test.jpg"
         uploadRequest.imageType = "image/jpeg"
@@ -49,9 +49,10 @@ class MediaService {
         do {
             let response = try call.response.wait()
             print(response.imageID)
+            return response.imageID
         } catch {
             print(error)
         }
-    
+        return ""
     }
 }

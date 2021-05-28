@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.4.3)
   - CGRPCZlib (1.0.0)
   - CNIOAtomics (2.27.0)
   - CNIOBoringSSL (2.10.5)
@@ -19,8 +20,10 @@ PODS:
     - SwiftProtobuf (< 2.0.0, >= 1.9.0)
   - gRPC-Swift-Plugins (1.0.0):
     - gRPC-Swift (= 1.0.0)
-  - Locksmith (4.0.0)
   - Logging (1.4.0)
+  - PromisesObjC (2.0.0)
+  - PromisesSwift (2.0.0):
+    - PromisesObjC (= 2.0.0)
   - SwiftNIO (2.27.0):
     - CNIODarwin (= 2.27.0)
     - CNIOLinux (= 2.27.0)
@@ -62,12 +65,14 @@ PODS:
   - SwiftProtobuf (1.16.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.2)
   - gRPC-Swift (~> 1.0.0)
   - gRPC-Swift-Plugins
-  - Locksmith
+  - PromisesSwift
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - CGRPCZlib
     - CNIOAtomics
     - CNIOBoringSSL
@@ -78,8 +83,9 @@ SPEC REPOS:
     - CNIOWindows
     - gRPC-Swift
     - gRPC-Swift-Plugins
-    - Locksmith
     - Logging
+    - PromisesObjC
+    - PromisesSwift
     - SwiftNIO
     - SwiftNIOConcurrencyHelpers
     - SwiftNIOExtras
@@ -93,6 +99,7 @@ SPEC REPOS:
     - SwiftProtobuf
 
 SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   CGRPCZlib: b0c9d704a12fa667f1824ffff20688f191945989
   CNIOAtomics: 43316aa185f4bd639aa0a9cd49741151bbe8de7f
   CNIOBoringSSL: 7ff9c35139a115f93269915b9555044d741b2ac9
@@ -103,8 +110,9 @@ SPEC CHECKSUMS:
   CNIOWindows: f2baa102255e986467578337ffa2f777cb6bdf7f
   gRPC-Swift: 77154009a019e97f8c4bd8f2bb75fe9726801157
   gRPC-Swift-Plugins: 22f2e8578f332e72ee59671c63264e219c982755
-  Locksmith: e9bebbaaa4cee3c511bc358a44f843c3fe00e21f
   Logging: beeb016c9c80cf77042d62e83495816847ef108b
+  PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
+  PromisesSwift: e0b2a6433469efb0b83a2b84c62a2abab8e5e5d4
   SwiftNIO: 81d33ce8c500b7e41b6cdde5f2f12330b9750219
   SwiftNIOConcurrencyHelpers: 23fc68bac541a465162d7225d2c743edd2f1012c
   SwiftNIOExtras: aa561b71020cd6844f722cf4513fb176c577414d
@@ -117,6 +125,6 @@ SPEC CHECKSUMS:
   SwiftNIOTransportServices: 896c9a4ac98698d32aa2feea7657ade219ae80bb
   SwiftProtobuf: 4e16842b83c6fda06b10fac50d73b3f1fce8ab7b
 
-PODFILE CHECKSUM: 7f2331e462ca7757d6dede1cb55c4a5d7a31820a
+PODFILE CHECKSUM: 4dbaa1a9ec6a0eaeb80a2239186aa58aa6abbde4
 
 COCOAPODS: 1.10.1

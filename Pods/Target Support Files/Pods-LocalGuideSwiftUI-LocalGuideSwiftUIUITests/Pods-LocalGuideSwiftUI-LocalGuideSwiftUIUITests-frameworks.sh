@@ -175,6 +175,7 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CGRPCZlib/CGRPCZlib.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CNIOAtomics/CNIOAtomics.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CNIOBoringSSL/CNIOBoringSSL.framework"
@@ -183,8 +184,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CNIOHTTPParser/CNIOHTTPParser.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CNIOLinux/CNIOLinux.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CNIOWindows/CNIOWindows.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Logging/Logging.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftNIO/NIO.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftNIOConcurrencyHelpers/NIOConcurrencyHelpers.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftNIOExtras/NIOExtras.framework"
@@ -199,6 +201,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/gRPC-Swift/GRPC.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CGRPCZlib/CGRPCZlib.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CNIOAtomics/CNIOAtomics.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CNIOBoringSSL/CNIOBoringSSL.framework"
@@ -207,8 +210,9 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CNIOHTTPParser/CNIOHTTPParser.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CNIOLinux/CNIOLinux.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CNIOWindows/CNIOWindows.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Locksmith/Locksmith.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Logging/Logging.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftNIO/NIO.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftNIOConcurrencyHelpers/NIOConcurrencyHelpers.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftNIOExtras/NIOExtras.framework"

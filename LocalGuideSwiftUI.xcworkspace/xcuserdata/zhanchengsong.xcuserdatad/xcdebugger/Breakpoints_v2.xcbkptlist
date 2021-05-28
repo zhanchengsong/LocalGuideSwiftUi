@@ -148,34 +148,34 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "FAA707C0-4A31-472F-8A61-1ED0E0FC7523 - 423a9a0e4c428a80"
+                  uuid = "FAA707C0-4A31-472F-8A61-1ED0E0FC7523 - ef8f9df2fe6b109e"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "LocalGuideSwiftUI.AuthViewModel.login(username: Swift.String, password: Swift.String) -&gt; ()"
                   moduleName = "LocalGuideSwiftUI"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhanchengsong/LocalGuide/LocalGuideSwiftUi/LocalGuideSwiftUI/ViewModal/Authentication/AuthViewModel.swift"
+                  urlString = "file:///Users/zhanchengsong/Projects/LocalGuide/LocalGuideSwiftUi/LocalGuideSwiftUI/ViewModal/Authentication/AuthViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "44">
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "33">
                </Location>
                <Location
-                  uuid = "FAA707C0-4A31-472F-8A61-1ED0E0FC7523 - 1fb7969693760352"
+                  uuid = "FAA707C0-4A31-472F-8A61-1ED0E0FC7523 - b202916a215f8548"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Result&lt;LocalGuideSwiftUI.UserModel, Swift.Error&gt;) -&gt; () in LocalGuideSwiftUI.AuthViewModel.login(username: Swift.String, password: Swift.String) -&gt; ()"
                   moduleName = "LocalGuideSwiftUI"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhanchengsong/LocalGuide/LocalGuideSwiftUi/LocalGuideSwiftUI/ViewModal/Authentication/AuthViewModel.swift"
+                  urlString = "file:///Users/zhanchengsong/Projects/LocalGuide/LocalGuideSwiftUi/LocalGuideSwiftUI/ViewModal/Authentication/AuthViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "120">
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "113">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -308,49 +308,49 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "325D9859-71FF-4100-A494-EA58873E19AF - 74f25b23effc23c4"
+                  uuid = "325D9859-71FF-4100-A494-EA58873E19AF - 4a77adda2956d1ad"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Result&lt;LocalGuideSwiftUI.UserModel, Swift.Error&gt;) -&gt; () in LocalGuideSwiftUI.UserManager.loginUserAndSaveToken(userReq: LocalGuideSwiftUI.UserSignInRequest, onComplete: (Swift.Result&lt;LocalGuideSwiftUI.UserModel, Swift.Error&gt;) -&gt; (), onError: (Swift.Result&lt;LocalGuideSwiftUI.UserError, Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "LocalGuideSwiftUI"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhanchengsong/LocalGuide/LocalGuideSwiftUi/LocalGuideSwiftUI/Manager/UserManager.swift"
+                  urlString = "file:///Users/zhanchengsong/Projects/LocalGuide/LocalGuideSwiftUi/LocalGuideSwiftUI/Manager/UserManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "48">
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "43">
                </Location>
                <Location
-                  uuid = "325D9859-71FF-4100-A494-EA58873E19AF - 74f25b23effc23c4"
+                  uuid = "325D9859-71FF-4100-A494-EA58873E19AF - 4a77adda2956d1ad"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Result&lt;LocalGuideSwiftUI.UserModel, Swift.Error&gt;) -&gt; () in LocalGuideSwiftUI.UserManager.loginUserAndSaveToken(userReq: LocalGuideSwiftUI.UserSignInRequest, onComplete: (Swift.Result&lt;LocalGuideSwiftUI.UserModel, Swift.Error&gt;) -&gt; (), onError: (Swift.Result&lt;LocalGuideSwiftUI.UserError, Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "LocalGuideSwiftUI"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhanchengsong/LocalGuide/LocalGuideSwiftUi/LocalGuideSwiftUI/Manager/UserManager.swift"
+                  urlString = "file:///Users/zhanchengsong/Projects/LocalGuide/LocalGuideSwiftUi/LocalGuideSwiftUI/Manager/UserManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "72">
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "75">
                </Location>
                <Location
-                  uuid = "325D9859-71FF-4100-A494-EA58873E19AF - 74f25b23effc23c4"
+                  uuid = "325D9859-71FF-4100-A494-EA58873E19AF - 4a77adda2956d1ad"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Result&lt;LocalGuideSwiftUI.UserModel, Swift.Error&gt;) -&gt; () in LocalGuideSwiftUI.UserManager.loginUserAndSaveToken(userReq: LocalGuideSwiftUI.UserSignInRequest, onComplete: (Swift.Result&lt;LocalGuideSwiftUI.UserModel, Swift.Error&gt;) -&gt; (), onError: (Swift.Result&lt;LocalGuideSwiftUI.UserError, Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "LocalGuideSwiftUI"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zhanchengsong/LocalGuide/LocalGuideSwiftUi/LocalGuideSwiftUI/Manager/UserManager.swift"
+                  urlString = "file:///Users/zhanchengsong/Projects/LocalGuide/LocalGuideSwiftUi/LocalGuideSwiftUI/Manager/UserManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "216">
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "263">
                </Location>
             </Locations>
          </BreakpointContent>

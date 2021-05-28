@@ -23,21 +23,21 @@ class AuthViewModel: ObservableObject {
         // And then fetch JWT/RefreshToken
         self.userSession = {
             let userSession = userManager.loadUserSession()
-            guard var userSession = userSession else {return nil}
+            guard var userSessionUnwrapped = userSession else {return nil}
             
-            let jwtToken = self.userKeyChain.getJWTToken(userId: userSession.userId)
-            guard let jwtToken = jwtToken else {
+            let jwtToken = self.userKeyChain.getJWTToken(userId: userSessionUnwrapped.userId)
+            guard let jwtTokenUnwrapped = jwtToken else {
                 print("Unable to read jwtToken")
                 return nil
             }
-            let refreshToken = self.userKeyChain.getRefreshToken(userId: userSession.userId)
-            guard let refreshToken = refreshToken else {
+            let refreshToken = self.userKeyChain.getRefreshToken(userId: userSessionUnwrapped.userId)
+            guard let refreshTokenUnwrapped = refreshToken else {
                 print("Unable to read refreshToken")
                 return nil
             }
-            userSession.jwtToken = jwtToken
-            userSession.refreshToken = refreshToken
-            return userSession
+            userSessionUnwrapped.jwtToken = jwtTokenUnwrapped
+            userSessionUnwrapped.refreshToken = refreshTokenUnwrapped
+            return userSessionUnwrapped
         }()
         
     }

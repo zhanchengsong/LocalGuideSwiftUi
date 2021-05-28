@@ -8,6 +8,8 @@ target 'LocalGuideSwiftUI' do
   # Pods for LocalGuideSwiftUI
   pod 'gRPC-Swift', '~> 1.0.0'
   pod 'gRPC-Swift-Plugins'
+  pod 'Alamofire', '~> 5.2'
+  pod 'PromisesSwift'
   target 'LocalGuideSwiftUITests' do
     inherit! :search_paths
     # Pods for testing

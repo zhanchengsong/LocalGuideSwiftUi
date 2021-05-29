@@ -38,6 +38,7 @@
 		A24C0F92263FB50D00FF57F1 /* UserProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24C0F91263FB50D00FF57F1 /* UserProfileActionButtonView.swift */; };
 		A24C0F94263FC23B00FF57F1 /* FilterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24C0F93263FC23B00FF57F1 /* FilterButtonView.swift */; };
 		A24C0F9626411EB500FF57F1 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24C0F9526411EB500FF57F1 /* ImagePicker.swift */; };
+		A273D47E266199480076462F /* UserServicePromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A273D47D266199480076462F /* UserServicePromise.swift */; };
 		A2EFEB83263EAA530038E28D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EFEB82263EAA530038E28D /* UserService.swift */; };
 		A2EFEB86263EAAC80038E28D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EFEB85263EAAC80038E28D /* UserModel.swift */; };
 		A2EFEB89263EAE910038E28D /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EFEB88263EAE910038E28D /* UserAPI.swift */; };
@@ -101,6 +102,7 @@
 		A24C0F91263FB50D00FF57F1 /* UserProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileActionButtonView.swift; sourceTree = "<group>"; };
 		A24C0F93263FC23B00FF57F1 /* FilterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonView.swift; sourceTree = "<group>"; };
 		A24C0F9526411EB500FF57F1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A273D47D266199480076462F /* UserServicePromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServicePromise.swift; sourceTree = "<group>"; };
 		A2EFEB82263EAA530038E28D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		A2EFEB85263EAAC80038E28D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		A2EFEB88263EAE910038E28D /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
@@ -356,6 +358,7 @@
 			children = (
 				A2EFEB82263EAA530038E28D /* UserService.swift */,
 				A2EFEB88263EAE910038E28D /* UserAPI.swift */,
+				A273D47D266199480076462F /* UserServicePromise.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -657,6 +660,7 @@
 				A21C4F7B2634BED100EA3F24 /* LoginView.swift in Sources */,
 				A24C0F8E263FB17800FF57F1 /* UserProfileView.swift in Sources */,
 				3ECC6DAD262CD73A000F8706 /* LocalGuideSwiftUIApp.swift in Sources */,
+				A273D47E266199480076462F /* UserServicePromise.swift in Sources */,
 				A2295723263F44EE000056CA /* UserManager.swift in Sources */,
 				A20BA5532637A7C700F6CF2B /* media.grpc.swift in Sources */,
 			);
